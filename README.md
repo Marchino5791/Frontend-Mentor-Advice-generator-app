@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Advice generator app screenshot](./screenshot.jpg)
+![Advice generator app screenshot](https://github.com/Marchino5791/Frontend-Mentor-Advice-generator-app/blob/main/Screenshot%202023-02-16%2017.18.32.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-Advice-generator-app](https://github.com/Marchino5791/Frontend-Mentor-Advice-generator-app)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
