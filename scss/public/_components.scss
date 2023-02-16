@@ -1,0 +1,50 @@
+@use 'mixin' as *;
+
+p {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3.46px;
+    font-weight: 500;
+    font-size: 0.6875rem;
+
+    @include breakpoint($desktop) {
+        font-size: .8125rem;
+    }
+}
+
+h1 {
+    color: var(--text);
+    font-weight: 600;
+    margin-block: 1.5rem;
+    font-size: 1.5rem;
+
+    @include breakpoint($desktop) {
+        font-size: 1.75rem;
+        margin-block: 1.5rem 2.5rem;
+    }
+
+    span {
+        font-weight: 800;
+    }
+}
+
+button {
+    background-color: var(--accent);
+    padding: 1.25rem;
+    border-radius: 100%;
+    border: 1px solid var(--bg);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    &:hover {
+        box-shadow: 0 0 2.5rem var(--accent);
+        border-color: var(--accent);
+    }
+}
+
+svg {
+    display: block;
+}

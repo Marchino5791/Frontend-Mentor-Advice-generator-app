@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: hsl(193, 38%, 86%);
+  --accent: hsl(150, 100%, 66%);
+  --bg-main: hsl(217, 19%, 24%);
+  --bg: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--bg-main);
+  max-width: 100%;
+  margin-inline: 1rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  border-radius: 10px;
+}
+@media (min-width: 31.25em) {
+  main {
+    padding: 3rem;
+    max-width: 33.75em;
+  }
+}
+
+.divider img {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block: 1rem;
+  color: var(--text);
+}
+.attribution a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3.46px;
+  font-weight: 500;
+  font-size: 0.6875rem;
+}
+@media (min-width: 31.25em) {
+  p {
+    font-size: 0.8125rem;
+  }
+}
+
+h1 {
+  color: var(--text);
+  font-weight: 600;
+  margin-block: 1.5rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 31.25em) {
+  h1 {
+    font-size: 1.75rem;
+    margin-block: 1.5rem 2.5rem;
+  }
+}
+h1 span {
+  font-weight: 800;
+}
+
+button {
+  background-color: var(--accent);
+  padding: 1.25rem;
+  border-radius: 100%;
+  border: 1px solid var(--bg);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+button:hover {
+  box-shadow: 0 0 2.5rem var(--accent);
+  border-color: var(--accent);
+}
+
+svg {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

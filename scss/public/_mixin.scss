@@ -1,0 +1,7 @@
+$desktop: 31.25em;
+
+@mixin breakpoint ($size){
+    @media (min-width: $size) {
+        @content;
+    }
+}

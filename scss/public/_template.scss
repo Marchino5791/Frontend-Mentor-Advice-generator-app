@@ -1,0 +1,63 @@
+@use 'mixin' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: hsl(193, 38%, 86%);
+    --accent: hsl(150, 100%, 66%);
+    --bg-main: hsl(217, 19%, 24%);
+    --bg: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: var(--bg-main);
+    max-width: 100%;
+    margin-inline: 1rem;
+    margin-bottom: 2.25rem;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    position: relative;
+    border-radius: 10px;
+
+    @include breakpoint($desktop) {
+        padding: 3rem;
+        max-width: 33.75em;
+    }
+}
+
+.divider img {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 1rem;
+    object-fit: contain;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-block: 1rem;
+    color: var(--text);
+
+    a {
+        color: var(--accent);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
